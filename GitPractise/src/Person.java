@@ -5,32 +5,26 @@ public class Person {
 	public int age;
 	public String address;
 	public String image;
+	public String money;
 
-	public Person(int id, String name, int age, String address, String image) {
+	public Person(int id, String name, int age, String address, String image, String money) {
 		super();
 		this.id = id;
 		this.name = name;
 		this.age = age;
 		this.address = address;
 		this.image = image;
+		this.money = money;
 	}
 
-	public Person(int id, String name, int age, String address) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.age = age;
-		this.address = address;
-	}
-	
 	public String getImage() {
 		return image;
 	}
-	
+
 	public void setImage(String image) {
 		this.image = image;
 	}
-	
+
 	public int getId() {
 		return id;
 	}
@@ -56,9 +50,19 @@ public class Person {
 		this.address = address;
 	}
 
+	public String getMoney() {
+		return money;
+	}
+
+	public void setMoney(String money) {
+		this.money = money;
+	}
+
 	@Override
 	public String toString() {
 		return "Person [id=" + id + ", name=" + name + ", age=" + age + ", address=" + address + ", image=" + image
-				+ "]";
+				+ ", money=" + money + "]";
 	}
+
+
 }
